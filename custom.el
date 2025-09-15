@@ -27,9 +27,10 @@
  '(package-selected-packages
    '(## android-mode counsel counsel-projectile dart-mode dashboard
 	diff-hl diminish doom-themes eldoc-box ellama
-	exec-path-from-shell flutter format-all imenu-anywhere ivy
-	kotlin-mode magit marginalia projectile rainbow-delimiters
-	swift-mode yaml-mode yasnippet yasnippet-snippets zoom))
+	exec-path-from-shell flutter format-all gdscript-mode
+	imenu-anywhere ivy kotlin-mode magit marginalia projectile
+	rainbow-delimiters swift-mode yaml-mode yasnippet
+	yasnippet-snippets zoom))
  '(project-mode-line t)
  '(scroll-bar-mode nil)
  '(sentence-end-double-space nil)

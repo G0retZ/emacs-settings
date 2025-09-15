@@ -196,6 +196,11 @@
 ;;  :program "dart"
 ;;  :args '("format"))
 
+;; Godot
+(require 'gdscript-mode)
+(use-package gdscript-mode
+  :hook (gdscript-mode . eglot-ensure))
+
 ;;(with-eval-after-load "dart-mode"
 ;;  (define-key dart-mode-map (kbd "C-c C-o") 'dart-format-buffer))
 
