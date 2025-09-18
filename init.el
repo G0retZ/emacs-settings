@@ -205,11 +205,6 @@
 ;; Flutter
 (use-package flutter)
 
-;; Dark theme
-;;(use-package doom-themes
-;;  :init
-;;  (load-theme 'doom-bluloco-dark))
-
 ;; Help/docs
 (defun consult-line-at-point ()
   (interactive)
@@ -232,16 +227,6 @@
           (lambda()
             (local-unset-key (kbd "SPC"))))
 
-;(add-hook 'all-the-icons-dired-mode-hook
-;          (lambda()
-;            (local-unset-key (kbd "SPC"))))
-
-;; Bells and whistles?
-;;(use-package doom-modeline
-;;  :init (doom-modeline-mode 1)
-;;  (setq doom-modeline-icon t)
-;;  (setq doom-modeline-total-line-number t))
-
 ;; Formatter
 (use-package format-all)
 (add-hook 'go-mode-hook 'format-all-mode)
@@ -250,11 +235,39 @@
 (add-hook 'tsx-mode-hook 'format-all-mode)
 (add-hook 'format-all-mode-hook 'format-all-ensure-formatter)
 
-;(setq treesit-language-source-alist
-;'(
-;    (tsx "https://github.com/tree-sitter/tree-sitter-typescript" "master" "tsx/src")
-;    (typescript "https://github.com/tree-sitter/tree-sitter-typescript" "master" "typescript/src")
-;     (css "https://github.com/tree-sitter/tree-sitter-css")))
+;; (require 'tree-sitter)
+;; (require 'tree-sitter-hl)
+;; (require 'tree-sitter-langs)
+;; (require 'tree-sitter-debug)
+;; (require 'tree-sitter-query)
+
+(setq treesit-language-source-alist
+      '(
+	(bash "https://github.com/tree-sitter/tree-sitter-bash")
+	(c "https://github.com/tree-sitter/tree-sitter-c")
+	(cpp "https://github.com/tree-sitter/tree-sitter-cpp")
+	(css "https://github.com/tree-sitter/tree-sitter-css")
+	(csv "https://github.com/tree-sitter-grammars/tree-sitter-csv" "master" "csv/src")
+	(dart "https://github.com/UserNobody14/tree-sitter-dart")
+	(elisp "https://github.com/Wilfred/tree-sitter-elisp")
+	(gitignore "https://github.com/shunsambongi/tree-sitter-gitignore")
+	(gdscript "https://github.com/PrestonKnopp/tree-sitter-gdscript")
+	(go "https://github.com/tree-sitter/tree-sitter-go")
+	(groovy "https://github.com/murtaza64/tree-sitter-groovy")
+	(html "https://github.com/tree-sitter/tree-sitter-html")
+	(java "https://github.com/tree-sitter/tree-sitter-java")
+	(javascript "https://github.com/tree-sitter/tree-sitter-javascript")
+	(json "https://github.com/tree-sitter/tree-sitter-json")
+	(kotlin "https://github.com/fwcd/tree-sitter-kotlin")
+	(psv "https://github.com/tree-sitter-grammars/tree-sitter-csv" "master" "psv/src")
+	(python "https://github.com/tree-sitter/tree-sitter-python")
+	(toml "https://github.com/tree-sitter/tree-sitter-toml")
+	(tsv "https://github.com/tree-sitter-grammars/tree-sitter-csv" "master" "tsv/src")
+	(tsx "https://github.com/tree-sitter/tree-sitter-typescript" "master" "tsx/src")
+	(typescript "https://github.com/tree-sitter/tree-sitter-typescript" "master" "typescript/src")
+	(xml "https://github.com/tree-sitter-grammars/tree-sitter-xml" "master" "xml/src")
+	(yaml "https://github.com/ikatyang/tree-sitter-yaml")))
+;; (mapc #'treesit-install-language-grammar (mapcar #'car treesit-language-source-alist))
 
 (use-package yasnippet
   :ensure t
