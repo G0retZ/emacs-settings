@@ -13,12 +13,9 @@
      default))
  '(default-frame-alist '((fullscreen . maximized)))
  '(diff-hl-flydiff-mode t)
- '(fido-mode t)
  '(global-display-line-numbers-mode t)
- '(ido-create-new-buffer 'always)
- '(ido-enable-flex-matching t)
- '(ido-everywhere t)
- '(ido-mode 'both nil (ido))
+ '(icomplete-mode t)
+ '(icomplete-vertical-mode t)
  '(make-backup-files nil)
  '(package-archives
    '(("gnu" . "https://elpa.gnu.org/packages/")
@@ -32,6 +29,7 @@
 	rainbow-delimiters swift-mode yaml-mode yasnippet
 	yasnippet-snippets zoom))
  '(project-mode-line t)
+ '(read-buffer-completion-ignore-case t)
  '(scroll-bar-mode nil)
  '(sentence-end-double-space nil)
  '(shift-select-mode nil)
