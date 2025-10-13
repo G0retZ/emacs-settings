@@ -137,9 +137,6 @@
 ;;   (nerd-icons-font-family "Symbols Nerd Font Mono")
 ;;  )
 
-;; Deadgrep is amazing.
-(use-package deadgrep
-  :bind (("C-c h" . deadgrep)))
 
 (defun setup-init()
   "Open this very file."
