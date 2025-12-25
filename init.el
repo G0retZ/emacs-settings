@@ -26,6 +26,9 @@
 ;; Hippie
 (global-set-key [remap dabbrev-expand] 'hippie-expand)
 
+;; Org mode images
+(setq org-image-actual-width nil)
+
 ;; Slurp environment variables from the shell.
 ;; a.k.a. The Most Asked Question On r/emacs
 (use-package exec-path-from-shell
