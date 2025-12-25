@@ -17,6 +17,7 @@
  '(global-display-line-numbers-mode t)
  '(icomplete-mode t)
  '(icomplete-vertical-mode t)
+ '(inhibit-startup-screen t)
  '(make-backup-files nil)
  '(package-archives
    '(("gnu" . "https://elpa.gnu.org/packages/")
