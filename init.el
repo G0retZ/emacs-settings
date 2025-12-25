@@ -12,11 +12,6 @@
 (setq custom-file (locate-user-emacs-file "custom.el"))
 (load custom-file :no-error-if-file-is-missing)
 
-;; Speedbar
-(use-package sr-speedbar
-  :load-path "manual/")
-(global-set-key (kbd "s-s") 'sr-speedbar-toggle)
-
 ;; Window and Frame management
 (global-set-key (kbd "M-o") 'other-window)
 ;;(windmove-default-keybindings)
