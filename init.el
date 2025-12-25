@@ -140,18 +140,6 @@
 
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
-;; Startup screen
-(use-package dashboard
-  :ensure t
-  :config
-  (dashboard-setup-startup-hook)
-  (setq dashboard-startup-banner 'logo
-        dashboard-center-content t
-        dashboard-items '((recents  . 5)
-                          (projects . 10))
-        dashboard-set-footer nil))
-(setq initial-buffer-choice (lambda () (get-buffer-create dashboard-buffer-name)))
-
 ;; More nice icons
 ;;(use-package all-the-icons)
 ;;(use-package all-the-icons-dired)

@@ -23,12 +23,11 @@
      ("nongnu" . "https://elpa.nongnu.org/nongnu/")
      ("melpa" . "https://melpa.org/packages/")))
  '(package-selected-packages
-   '(## android-mode counsel counsel-projectile dart-mode dashboard
-	diff-hl diminish doom-themes eldoc-box ellama
-	exec-path-from-shell flutter format-all gdscript-mode
-	imenu-anywhere ivy kotlin-mode magit marginalia projectile
-	rainbow-delimiters swift-mode yaml-mode yasnippet
-	yasnippet-snippets zoom))
+   '(## android-mode counsel counsel-projectile dart-mode diff-hl
+	diminish doom-themes eldoc-box ellama exec-path-from-shell
+	flutter format-all gdscript-mode imenu-anywhere ivy
+	kotlin-mode magit marginalia projectile rainbow-delimiters
+	swift-mode yaml-mode yasnippet yasnippet-snippets zoom))
  '(project-mode-line t)
  '(read-buffer-completion-ignore-case t)
  '(scroll-bar-mode nil)
